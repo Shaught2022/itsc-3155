@@ -1,0 +1,23 @@
+<html>
+<head>
+<body>
+   <!-- This creates the text box that lets you input your name -->
+<input id="name-input" type="text" placeholder="Enter your name" />
+<!-- This makes the clickable button that says click me -->
+<button id="my-button">Click Me</button>
+
+<!-- Creates the myButton and nameInput variables and has them return their ID -->
+<script>
+  var myButton = document.querySelector('#my-button');
+  var nameInput = document.querySelector('#name-input');
+  //This adds an eventlistener so when the button is clicked the message will appear
+  myButton.addEventListener('click', function () {
+  //This checks if the text box has anything inside of it and creates the popup window that appears with the alert
+    if (nameInput.value !== '') {
+      alert('Hello ' + nameInput.value);
+    }
+  });
+</script>
+</body>
+</head>
+</html>
