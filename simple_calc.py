@@ -43,16 +43,9 @@ class Calculator:
     def set_operation(self):
         # Call the get_user_input_operation method
         # Assign the result to the operation variable
-        self.get_user_input_operation()
-
-        if self.operation == '+':
+        if self.get_user_input_operation() == '+':
             self.result = self.num1 + self.num2
-        if self.operation == '-':
-            self.result = self.num1 - self.num2
-        if self.operation == '*':
-            self.result = self.num1 * self.num2
-        if self.operation =='/':
-            self.result = self.num1 / self.num2
+    
 
     def get_result(self):
         return self.result
