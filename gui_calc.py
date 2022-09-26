@@ -60,7 +60,9 @@ class CalcGUI():
 
         # TODO! Add a 'Quit' button that will close the GUI window
         #   Hint: use the self.root.destroy() method!
-
+        self.calc = Button(self.root, text = "Quit", command=self.root.destroy)
+        self.calc.grid(row = 4, column = 0, columnspan = 1, pady = 5)
+        self.calc.config(font=("Terminal", 12))
         self.root.mainloop()
 
     def calculate(self):
